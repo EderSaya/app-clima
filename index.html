@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Técnica Gradiwe | App Clima</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="css/icons/style.css">
+    <!--Estilos personalizados-->
+    <link rel="stylesheet" href="css/bootstrap-4.5.0-dist/css/main.css">
+</head>
+<body>
+
+    <div class="container my-5 main-container">
+        <!--Banner-->
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid banner-main" src="assets/banner.jpg">
+                <div class="d-inline city">
+                    <span class="icon-location"></span>
+                    <span id="label-city"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--Botones flotantes-->
+        <div class="buttons-float d-flex flex-column">
+            
+            <div class="type-weather d-flex flex-column justify-content-center align-items-center">
+                <span class=" " id="icon-weather"></span>
+                <span class="day-float" id="label-weather"></span>
+            </div>
+            <div class="grade-indicator d-flex flex-column justify-content-center align-items-center">
+                <span class="font-grade" id="label-temp"></span>
+                <span class="text-white d-inline-block">oc</span>
+            </div>
+            
+        </div>
+ 
+        <!--Indicadores de clima Bogotá.-->
+        <div class="row">
+            <div class="col-md-8 p-0">
+                <div class="row my-5 no-gutters">
+                    <div class="col-md-4">
+                        <span class="label-days d-inline-block pb-5"><b>3 Days</b> Forescast</span>
+
+                        <div class="row no-gutters">
+                            <div class="col-md-11 px-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-11">
+                                        <div class="row days-weather">
+                                            <div class="col-3 col-sm-3 col-md-3 px-0 py-4 text-center">
+                                                <span class="" id="icon-day1"></span>
+                                            </div>
+                                            <div class="col-4 col-sm-4 col-md-4 d-flex flex-column justify-content-center px-0 today-weather">
+                                                <span class="days">Friday</span>
+                                                <span class="type-day" id="rain"></span>
+                                            </div>
+                                            <div class="col-5 col-sm-5 col-md-5 px-0 grades-rounded text-center">
+                                                <span class="grades" id="min-max-one"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-11 py-3">
+                                        <div class="row days-weather">
+                                            <div class="col-3 col-sm-3 col-md-3 px-0 py-4 text-center">
+                                                <span class=" " id="icon-day2"></span>
+                                            </div>
+                                            <div class="col-4 col-sm-4 col-md-4 d-flex flex-column justify-content-center px-0 today-weather">
+                                                <span class="days">Saturday</span>
+                                                <span class="type-day" id="clear"></span>
+                                            </div>
+                                            <div class="col-5 col-sm-5 col-md-5 px-0 grades-rounded-gray text-center">
+                                                <span class="grades-secundary" id="min-max-two"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <div class="row days-weather">
+                                            <div class="col-3 col-sm-3 col-md-3 px-0 py-4 text-center ">
+                                                <span class=" " id="icon-day3"></span>
+                                            </div>
+                                            <div class="col-4 col-sm-4 col-md-4 d-flex flex-column justify-content-center px-0 today-weather">
+                                                <span class="days">Sunday</span>
+                                                <span class="type-day" id="cloudy"></span>
+                                            </div>
+                                            <div class="col-5 col-sm-5 col-md-5 px-0 grades-rounded-gray text-center">
+                                                <span class="grades-secundary" id="min-max-thre"></span>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Fotografía Arab Street Singapure-->
+                    <div class="col-12 col-sm-12 col-md-4 pt-md-0 pt-sm-5 pt-5">
+                        <span class="label-days"><b>Place</b> to Visit</span>
+                        <div class="row no-gutters py-5">
+                            <div class="col-12 col-sm-12 col-md-12 pl-0 pr-md-4 pr-sm-0 pr-0">
+                                <img class="img-fluid banner-info" src="assets/brand.jpg">
+                                <div class="description-city d-inline-block">
+                                    <span class="icon-location"></span>
+                                    <span>Arab Street</span>
+                                    <div class="">
+                                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Singapure</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--Apartado de Top reviews más dos imágenes de lugares-->
+                    <div class="col-12 col-sm-12 col-md-4 d-flex flex-column ">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="align-items-center py-1 space-lines">
+                                <span class="icon-add"></span>
+                                <span class="label-small"> Top Reviews</span>
+                            </div>
+                            <div class="d-flex flex-row justify-content-end align-items-center container-avatar">
+                                <img class="img-fluid rounded mr-1" src="assets/avatar1.jpg">
+                                <img class="img-fluid rounded mr-1" src="assets/avatar2.jpg">
+                                <img class="img-fluid rounded mr-1" src="assets/avatar3.jpg">
+                                <div class="rounded-avatar rounded text-center text-white ">
+                                    <span>5+</span></div>
+                            </div>
+                        </div>
+                       
+                        <!--Sección de dos imágenes -->
+                        <div class="row no-gutters sites-images">
+                            <div class="col-12 col-sm-12 col-md-12 px-0 py-4">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12">
+                                        <img class="museum img-fluid" src="assets/news3.jpg">
+                                        <div class="description-museum d-inline">
+                                            <span class="icon-location"></span>
+                                            <span>Art Science</span>
+                                            <div class="">
+                                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Museum</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 pt-3">
+                                        <img class="banner img-fluid" src="assets/news2.jpg">
+                                        <div class="description-soutain d-inline">
+                                            <span class="icon-location"></span>
+                                            <span>Sountain</span>
+                                            <div>
+                                                <span>&nbsp;&nbsp;&nbsp;&nbsp; Of North</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="button-plus text-center text-white"><span class="icon-plus1"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!--Apartado de datos de clima de París Francia.-->
+            <div class="col-12 col-sm-12 col-md-4 block-float px-0 px-sm-0 px-md-5">
+                <div class="row">
+                    <div class="col-md-12 main-france">
+                        <div class="row">
+                            <div class="col-4 col-sm-4 col-md-4 py-4 box-icon text-center">
+                                <span class=" " id="icon-paris"></span>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4 px-0 text-center main-grades">
+                                <span class="grades-bold" id="temp-day1"></span>
+                                <span class="text-black d-inline-block">oC</span>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4 px-3 d-flex flex-column py-3">
+                                <span class="city-font" id="city-france"></span>
+                                <span class="country-font">Francia</span>
+                            </div>
+                        </div>
+                        <div class="row no-gutters text-center pt-1 pb-2">
+                            <div class="col-5 col-sm-5 col-md-5">
+                                <span class="data-weather" id="humidity"></span>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4">
+                                <span class="data-weather">West</span>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3">
+                                <span class="data-weather" id="speed-day1"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 main-france my-3">
+                        <div class="row">
+                            <div class="col-4 col-sm-4 col-md-4 py-4 box-icon text-center">
+                                <span class=" " id="icon-paris2"></span>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4 px-0 text-center main-grades">
+                                <span class="grades-bold" id="temp-day2"></span>
+                                <span class="text-black d-inline-block">oC</span>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4 px-3 d-flex flex-column py-3">
+                                <span class="city-font">París</span>
+                                <span class="country-font">Francia</span>
+                            </div>
+                        </div>
+                        <div class="row no-gutters text-center pt-1 pb-2">
+                            <div class="col-5 col-sm-5 col-md-5">
+                                <span class="data-weather" id="humidity-two"></span>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4">
+                                <span class="data-weather">West</span>
+                            </div>
+                            <div class="col-3 col-sm-3 col-md-3">
+                                <span class="data-weather" id="speed-day2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-4 container-more-location text-center">
+                        <div class="more-location mx-auto text-center py-1">
+                            <span>Add Locations</span>
+                        </div>
+                        <div class="pt-4 location">
+                            <img class="img-fluid" src="assets/news1.jpg">
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!--Escript donde se maneja la comunicación la api openweathermap-->
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

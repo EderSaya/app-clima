@@ -1,0 +1,927 @@
+/**
+ *Estilos personalizados de la aplicación
+ * Autor: Eder Saya Castillo.
+ * Contiene todos los estilos de la aplicación incluidas las mediaquerys.
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #e9e5f7;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container, .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.main-container {
+    border-radius: 1.5em;
+    padding: 2.2em;
+    background: #f7f7f7;
+}
+
+.banner-main {
+    border-radius: 1.5em;
+}
+
+.banner {
+    border-radius: 2.6em;
+}
+
+/*Botones flotantes*/
+.buttons-float {
+    font-family: 'Roboto';
+    position: absolute;
+    top: 12.3em;
+    left: 4.7em;
+    width: 5.5em;
+    border-radius: 0 1.6em 1.6em 0;
+    background: #7e5bb7;
+    z-index: 20;
+}
+
+.type-weather {
+    background: #0a2c75;
+    border-radius: 0 1.6em 1.6em .9em;
+    height: 5.5em;
+}
+
+.type-weather .day-float {
+    font-size: .7em;
+}
+
+.grade-indicator {
+    background: #7e5bb7;
+    border-radius: 0 1.6em 1.6em 0;
+    height: 5.5em;
+}
+
+.grade-indicator .font-grade {
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
+.grade-indicator .d-inline-block {
+    top: 10.4em;
+    left: 5.2em;
+    font-size: .7em;
+    position: absolute;
+}
+
+.type-weather span {
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+.type-weather .icon-cloudy1 {
+    font-size: 2em;
+}
+
+.days-weather div .icon-rainy {
+    color: #7e58f3;
+}
+
+.days-weather div .icon-sun-fill {
+    color: #f1ba06;
+    font-size: 1.5em
+}
+
+.days-weather div .icon-cloudy2 {
+    color: #7e58f3;
+}
+
+/*Labels*/
+.label-days {
+    font-size: 1.2em;
+}
+
+.label-small {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: .8em;
+    color: #a09f9f;
+}
+
+.container-avatar img {
+    height: 75%;
+}
+
+.rounded-avatar {
+    background: #cecece;
+    height: 75%;
+    min-width: 1.8em;
+}
+
+.rounded-avatar span {
+    font-size: .8em;
+}
+
+.banner-info {
+    height: 16.8em;
+    border-radius: 1.5em; 
+}
+
+.main-container .row .col-md-12 {
+    position: relative;
+}
+
+.city {
+    position: absolute;
+    top: 3.8em;
+    left: 3.8em;
+    font-size: 1.5em;
+    color: #7e5bb7; 
+}
+
+.days-weather {
+    border: 1px solid #cecece;
+    border-radius: .7em;
+}
+
+.today-weather {
+    line-height: 1;
+    padding: .7em;
+}
+
+.days {
+    color: #404042;
+    line-height: 1.6;
+}
+
+.type-day {
+    color: rgb(11, 158, 243);
+}
+
+.grades-rounded {
+    border-radius: .7em;
+    background: #4d83f7;
+    padding: 1.9em 0;
+}
+
+.grades-rounded-gray {
+    border-radius: .7em;
+    background: #d0d9e2;
+    padding: 1.5em 0;
+}
+
+.grades {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.grades-secundary {
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 16px;
+    color: #181818;
+}
+
+.description-city {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    font-family: 'Roboto';
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.museum {
+    border-radius: 1em;
+    min-height: 3.7em;
+}
+
+.description-museum {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.description-soutain {
+    position: absolute;
+    top: 2.6em;
+    left: 1.2em;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.button-plus {
+    position: absolute;
+    top: 1.1em;
+    left: 10.4em;
+    height: 91.1%;
+    width: 35%;
+    padding: 4.4em 0;
+    background-color: #a321e6;
+    opacity: .9;
+    border-radius: 2.6em;
+}
+
+.sites-images {
+    padding: 1em 0;
+}
+
+.block-float {
+    top: -6.3em;
+}
+
+.main-france {
+    border-radius: 1.1em;
+    border: 1px solid #ffe9e9;
+    background: #FFFFFF;
+}
+
+.box-icon {
+    border-radius: .6em;
+    background: #e0e8f1;
+    height: 100%;
+    color: #7c24f1;
+    font-size: 1.6em;
+}
+
+.main-grades {
+    border-right: 1px solid #e6e3e3;
+    margin: 1.3em 0;
+}
+
+.main-grades .d-inline-block {
+    position: absolute;
+    font-size: .7em;
+    top: .6em;
+    left: 5.5em;
+} 
+
+.grades-bold {
+    font-family: 'Roboto';
+    font-size: 1.8em;
+}
+
+.city-font {
+    font-family: 'Roboto';
+    font-size: 1.1em;
+}
+
+.country-font {
+    font-size: .8em;
+}
+
+.data-weather {
+    font-size: .7em;
+    color: #909090;
+}
+
+.container-more-location {
+    border-radius: 1.1em;
+    border: 1px dashed #cecece;
+    background: #FFFFFF;
+}
+
+.more-location {
+    width: 60%;
+    border-radius: 1em;
+    background: #e0e8f1;
+}
+
+.more-location span {
+    font-size: .9em;
+    color: #2a54ad;
+}
+
+.location img {
+    border-radius: 2.5em 2.5em 0 0;
+}
+
+/*--------------------------Media querys-------------------*/
+@media (max-width: 360px ) and ( min-width: 120px){
+    .buttons-float {
+        top: 5.9em;
+        left: -.1em;
+        width: 2.8em;
+        border-radius: 0 .8em .8em 0;
+    }
+
+    .type-weather {
+        border-radius: 0 .8em .8em .9em;
+        height: 2.5em;
+    }
+
+    .grade-indicator {
+        border-radius: 0 .8em .8em 0;
+        height: 2.5em;
+    }
+
+    .city {
+        top: 1em;
+        left: 1.6em;
+        font-size: .8em;
+    }
+
+    .grade-indicator .font-grade {
+        font-size: 1.1em;
+    }
+
+    .button-plus {
+        left: 11.8em;
+        top: 1em;
+        height: 93%;
+        padding: 5.8em 0;
+    }
+
+    .block-float {
+        top: -2.6em;
+    }
+}
+
+@media (max-width: 576px) and ( min-width: 361px){
+    .banner-info {
+       width: 100%;
+    }
+
+    .block-float {
+        top: -2em;
+    }
+
+    .button-plus {
+        top: 1em;
+        left: 22em;
+        width: 25%;
+        height: 95.3%;
+        padding: 9.9em 0;
+    }
+
+    .buttons-float {
+        top: 6.3em;
+        left: 1.1em;
+        width: 4em;
+    }
+
+    .type-weather {
+        border-radius: 0 1.2em 1.2em .9em;
+        height: 4em;
+    }
+
+    .type-weather .icon-cloudy1 {
+        font-size: 1.3em;
+    }
+
+    .type-weather .day-float {
+        font-size: .5em;
+    }
+
+    .grade-indicator {
+        border-radius: 0 1.2em 1.2em .9em;
+        height: 4em;
+    }
+
+    .grade-indicator .font-grade {
+        font-size: 1.3em;
+    }
+
+    .grade-indicator .d-inline-block {
+        top: 7.3em;
+        left: 3.7em;
+    }
+
+    .city {
+        top: 1em;
+        left: 2.6em;
+        font-size: 1em;
+    }
+
+    .main-grades .d-inline-block {
+        left: 8.3em;
+    }
+
+}
+
+@media (max-width: 768px) and ( min-width: 577px){
+    .banner-info {
+        width: 100%;
+     }
+ 
+     .block-float {
+         top: -4em;
+     }
+ 
+     .button-plus {
+        top: 1em;
+        left: 6.8em;
+        padding: 0;
+        width: 25%;
+        height: 92%;
+        padding: 4.6em 0
+     }
+
+     .banner {
+        border-radius: 1em;
+        height: 11.9em;
+    }
+
+    .label-days {
+        font-size: 1em;
+    }
+ 
+     .buttons-float {
+         top: 8.4em;
+         left: 1.5em;
+         width: 4em;
+     }
+ 
+     .type-weather {
+         border-radius: 0 1.2em 1.2em .9em;
+         height: 4em;
+     }
+ 
+     .type-weather .icon-cloudy1 {
+         font-size: 1.3em;
+     }
+ 
+     .type-weather .day-float {
+         font-size: .5em;
+     }
+ 
+     .grade-indicator {
+         border-radius: 0 1.2em 1.2em .9em;
+         height: 4em;
+     }
+ 
+     .grade-indicator .font-grade {
+         font-size: 1.3em;
+     }
+ 
+     .grade-indicator .d-inline-block {
+         top: 7.3em;
+         left: 3.7em;
+     }
+ 
+     .city {
+         top: 3em;
+         left: 3.6em;
+         font-size: 1em;
+     }
+
+     .container-avatar img {
+        height: 30%;
+    }
+
+    .rounded-avatar {
+        height: 30%;
+        min-width: 1.3em;
+    }
+
+    .icon-add {
+        font-size: .6em;
+    }
+
+    .label-small {
+        font-size: .6em;
+    }
+
+    .box-icon {
+        font-size: 1.1em;
+        padding: .5em 0;
+    }
+
+    .space-lines {
+        line-height: 1;
+    }
+
+    .days{
+        font-size: .6em;
+        font-weight: 600;
+    }
+
+    .type-day {
+        font-size: .6em;
+    }
+
+    .days-weather div .icon-rainy {
+        font-size: .9em;
+        line-height: 5;
+    }  
+
+    .days-weather div .icon-sun-fill {
+        font-size: .9em;
+        line-height: 5;
+    }
+
+    .days-weather div .icon-cloudy2 {
+        font-size: .9em;
+        line-height: 5;
+    }
+
+    .grades-bold {
+        font-size: 1em;
+    }
+
+    .main-grades .d-inline-block {
+        top: .1em;
+        left: 2.5em;
+    }
+
+    .city-font {
+        font-size: .6em;
+    }
+
+    .country-font {
+        font-size: .5em;
+    }
+
+    .data-weather {
+        font-size: .5em;
+    }
+
+    .grades-rounded {
+        padding: 2.8em 0;
+    }
+
+    .grades-rounded-gray {
+        padding: 2.8em 0;
+    }
+
+    .grades {
+        font-size: 11px;
+    }
+
+    .grades-secundary {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 992px) and ( min-width: 769px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1215px;
+        height: 796px;
+    }
+
+    .buttons-float {
+        top: 9.3em;
+        left: 0;
+        width: 5.2em;
+    }
+
+    .type-weather .icon-cloudy1 {
+        font-size: 2em;
+    }
+
+    .type-weather .icon-sun-fill {
+        font-size: 2em;
+    }
+    
+    .type-weather {
+        border-radius: 0 1.6em 1.6em .9em;
+        height: 5.5em;
+    }
+    
+    .type-weather .day-float {
+        font-size: .7em;
+    }
+
+    .grade-indicator {
+        background: #7e5bb7;
+        border-radius: 0 1.6em 1.6em 0;
+        height: 5.5em;
+    }
+    
+    .grade-indicator .font-grade {
+        font-size: 2em;
+    }
+    
+    .grade-indicator .d-inline-block {
+        top: 10.2em;
+        left: 4.9em;
+    }
+    
+    .type-weather span {
+        font-size: 1em;
+    }
+
+    .city {
+        top: 2.6em;
+        left: 3.4em;
+        font-size: 1.5em; 
+    }
+
+    .button-plus {
+        top: 1em;
+        left: 8.4em;
+        height: 44.6%;
+        width: 35%;
+        padding: 4.4em 0;
+    }
+
+    .label-days {
+        font-size: 1.2em;
+    }
+
+    .block-float {
+        top: -5.7em;
+    }
+
+    .sites-images {
+        padding: 1em 0 0 0;
+    }
+
+    .container-avatar img {
+        height: 48%;
+    }
+    .rounded-avatar {
+        height: 48%;
+        min-width: 1.2em;
+    }
+
+    .rounded-avatar span {
+        font-size: .7em;
+    }
+
+    .label-small {
+        font-size: .6em;
+    }
+
+    .icon-add {
+        font-size: .8em;
+    }
+
+    .banner {
+        height: 46.5%;
+        border-radius: 2.6em;
+    }
+
+    .box-icon {
+        font-size: 1.6em;
+    }
+
+    .days{
+        font-size: .8em;
+        font-weight: 700;
+    }
+
+    .type-day {
+        font-size: .7em;
+    }
+
+    .days-weather div .icon-rainy {
+        font-size: 1.5em;
+        line-height: 0;
+    }  
+
+    .days-weather div .icon-sun-fill {
+        font-size: 1.5em;
+        line-height: 0;
+    }
+
+    .days-weather div .icon-cloudy2 {
+        font-size: 1.5em;
+        line-height: 0;
+    }
+
+    .type-weather .icon-cloudy2, .type-weather .icon-icloud, .type-weather .icon-sun-fill, .type-weather .icon-rainy, .type-weather .icon-cloud, .type-weather .icon-cloudy1, .type-weather .icon-cloudy2, .type-weather .icon-cloudy, .type-weather .icon-sun, .type-weather .icon-cloud-moon-snowflakes {
+        font-size: 2em;
+    }
+
+    .box-icon .icon-cloudy2, .box-icon .icon-icloud, .box-icon .icon-sun-fill, .box-icon .icon-rainy, .box-icon .icon-cloud, .box-icon .icon-cloudy1, .box-icon .icon-cloudy2, .box-icon .icon-cloudy, .box-icon .icon-sun, .box-icon .icon-cloud-moon-snowflakes {
+        font-size: 1em;
+    }
+
+    .main-grades .d-inline-block {
+        left: 4.3em;
+        top: .6em;
+    }
+
+    .grades-bold {
+        font-size: 1.8em;
+    }
+
+    .city-font {
+        font-size: 1.1em;
+    }
+
+    .country-font {
+        font-size: .8em;
+    }
+
+    .data-weather {
+        font-size: .7em;
+    }
+
+    .grades-rounded {
+        border-radius: .7em;
+        padding: 1.9em 0;
+    }
+
+    .grades-rounded-gray {
+        padding: 1.5em 0;
+    }
+
+    .grades {
+        font-size: 16px;
+    }
+
+    .grades-secundary {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) and ( min-width: 993px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1215px;
+        height: 867px;
+    }
+
+    .buttons-float {
+        top: 12.3em;
+        left: -1em;
+        width: 5.5em;
+        border-radius: 0 1.6em 1.6em 0;
+    }
+
+    .type-weather .icon-cloudy1 {
+        font-size: 2em;
+    }
+
+
+    .type-weather .icon-sun-fill {
+        font-size: 2em;
+    }
+    
+    .type-weather {
+        border-radius: 0 1.6em 1.6em .9em;
+        height: 5.5em;
+    }
+    
+    .type-weather .day-float {
+        font-size: .7em;
+    }
+
+    .grade-indicator {
+        background: #7e5bb7;
+        border-radius: 0 1.6em 1.6em 0;
+        height: 5.5em;
+    }
+    
+    .grade-indicator .font-grade {
+        font-size: 2em;
+    }
+    
+    .grade-indicator .d-inline-block {
+        top: 10.4em;
+        left: 5.2em;
+    }
+    
+    .type-weather span {
+        font-size: 1em;
+    }
+
+    .city {
+        top: 4.7em;
+        left: 3.8em;
+        font-size: 1.5em; 
+    }
+
+    .button-plus {
+        top: 1em;
+        left: 10.4em;
+        height: 42.3%;
+        width: 35%;
+        padding: 4.4em 0;
+    }
+
+    .label-days {
+        font-size: 1.2em;
+    }
+
+    .block-float {
+        top: -6.3em;
+    }
+
+    .sites-images {
+        padding: 1em 0;
+    }
+
+    .container-avatar img {
+        height: 75%;
+    }
+    .rounded-avatar {
+        height: 75%;
+        min-width: 1.8em;
+    }
+
+    .rounded-avatar span {
+        font-size: .8em;
+    }
+
+    .label-small {
+        font-size: .8em;
+    }
+
+    .icon-add {
+        font-size: .9em;
+    }
+
+    .banner {
+        height: 44%;
+        border-radius: 2.6em;
+    }
+
+    .box-icon {
+        font-size: 1.6em;
+    }
+
+    .days{
+        font-size: .8em;
+        font-weight: 700;
+    }
+
+    .type-day {
+        font-size: .7em;
+    }
+
+    .days-weather div .icon-rainy {
+        font-size: 1.5em;
+        line-height: 1;
+    }
+    
+    .days-weather div .icon-sun-fill {
+        font-size: 1.5em;
+        line-height: 0;
+    }
+
+    .days-weather div .icon-cloudy2 {
+        font-size: 1.5em;
+        line-height: 0;
+    }
+
+    .type-weather .icon-cloudy2, .type-weather .icon-icloud, .type-weather .icon-sun-fill, .type-weather .icon-rainy, .type-weather .icon-cloud, .type-weather .icon-cloudy1, .type-weather .icon-cloudy2, .type-weather .icon-cloudy, .type-weather .icon-sun, .type-weather .icon-cloud-moon-snowflakes {
+        font-size: 2em;
+    }
+
+    .box-icon .icon-cloudy2, .box-icon .icon-icloud, .box-icon .icon-sun-fill, .box-icon .icon-rainy, .box-icon .icon-cloud, .box-icon .icon-cloudy1, .box-icon .icon-cloudy2, .box-icon .icon-cloudy, .box-icon .icon-sun, .box-icon .icon-cloud-moon-snowflakes {
+        font-size: 1.3em;
+    }
+
+    .main-grades .d-inline-block {
+        left: 5.5em;
+        top: .5em;
+    }
+
+    .grades-bold {
+        font-size: 1.8em;
+    }
+
+    .city-font {
+        font-size: 1.1em;
+    }
+
+    .country-font {
+        font-size: .8em;
+    }
+
+    .data-weather {
+        font-size: .7em;
+    }
+
+    .grades-rounded {
+        border-radius: .7em;
+        padding: 1.9em 0;
+    }
+
+    .grades-rounded-gray {
+        padding: 1.5em 0;
+    }
+
+    .grades {
+        font-size: 16px;
+    }
+
+    .grades-secundary {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1366px) and ( min-width: 1201px){
+    .buttons-float {
+        top: 11.3em;
+        left: 7em;
+    }
+
+    .button-plus {
+        top: 1em;
+        left: 9.7em;
+        padding: 4.4em 0;
+    }
+
+    .block-float {
+        top: -5.5em;
+    }
+}
